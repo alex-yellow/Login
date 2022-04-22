@@ -1,0 +1,11 @@
+﻿
+@{
+    ViewBag.Title = "Вход";
+}
+
+@if(Session["Id"]!=null)
+{
+    <h4>Hello @Session["Name"].ToString()</h4>
+    @Html.ActionLink("Выход", "Login");
+}
+
